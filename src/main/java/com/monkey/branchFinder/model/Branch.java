@@ -1,7 +1,7 @@
 package com.monkey.branchFinder.model;
 
 import jakarta.persistence.*;
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id;
 
 import java.util.Objects;
 
