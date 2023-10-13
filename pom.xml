@@ -49,6 +49,12 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.26</version> <!-- Add this line with an appropriate version -->
 		</dependency>
+		<!-- springfox-swagger2 & springfox-swagger-ui -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+			<version>3.0.0</version>
+		</dependency>
 
 	</dependencies>
 
