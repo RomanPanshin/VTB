@@ -1,7 +1,9 @@
 package com.monkey.branchFinder.controller;
 
 import com.monkey.branchFinder.model.Branch;
+import com.monkey.branchFinder.model.OpenHours;
 import com.monkey.branchFinder.service.BranchService;
+import com.monkey.branchFinder.service.OpenHoursService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +16,7 @@ public class BranchController {
 
     @Autowired
     private BranchService branchService;
+
 
     // Retrieve all branches
     @GetMapping
