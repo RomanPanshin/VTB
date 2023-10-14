@@ -22,6 +22,6 @@ public interface BranchRepository extends JpaRepository<Branch, Long> {
     @Query("SELECT b FROM Branch b WHERE " +
             "6371 * acos(cos(radians(?1)) * cos(radians(b.latitude)) " +
             "* cos(radians(b.longitude) - radians(?2)) + sin(radians(?1)) " +
-            "* sin(radians(b.latitude))) < 100") // Here 10 is the radius in km
+            "* sin(radians(b.latitude))) < 15") // Here 10 is the radius in km
     List<Branch> findNearbyBranches(Double latitude, Double longitude);
 }
