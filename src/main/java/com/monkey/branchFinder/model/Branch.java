@@ -1,7 +1,7 @@
 package com.monkey.branchFinder.model;
 
 import jakarta.persistence.*;
-import javax.persistence.Id;
+
 
 import java.util.Objects;
 
