@@ -2,7 +2,6 @@ package com.monkey.branchFinder.model;
 
 import jakarta.persistence.*;
 
-
 import java.util.Objects;
 
 @Entity
@@ -13,7 +12,7 @@ public class Branch {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "salePointName")
+    @Column(name = "salepointname")
     private String salePointName;
 
     @Column(name = "address")
@@ -25,16 +24,16 @@ public class Branch {
     @Column(name = "rko")
     private String rko;
 
-    @Column(name = "officeType")
+    @Column(name = "officetype")
     private String officeType;
 
-    @Column(name = "salePointFormat")
+    @Column(name = "salepointformat")
     private String salePointFormat;
 
-    @Column(name = "suoAvailability")
+    @Column(name = "suoavailability")
     private Boolean suoAvailability;
 
-    @Column(name = "hasRamp")
+    @Column(name = "hasramp")
     private Boolean hasRamp;
 
     @Column(name = "latitude")
@@ -43,7 +42,7 @@ public class Branch {
     @Column(name = "longitude")
     private Double longitude;
 
-    @Column(name = "metroStation")
+    @Column(name = "metrostation")
     private String metroStation;
 
     @Column(name = "distance")
@@ -52,7 +51,7 @@ public class Branch {
     @Column(name = "kep")
     private String kep;
 
-    @Column(name = "myBranch")
+    @Column(name = "mybranch")
     private String myBranch;
 
     public Branch() {}

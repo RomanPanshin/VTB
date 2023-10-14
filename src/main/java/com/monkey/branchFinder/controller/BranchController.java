@@ -58,4 +58,17 @@ public class BranchController {
             return ResponseEntity.notFound().build();
         }
     }
+    @GetMapping("/branches/nearby")
+    public ResponseEntity<List<Branch>> getNearbyBranches(
+            @RequestParam Double latitude,
+            @RequestParam Double longitude) {
+
+        List<Branch> nearbyBranches = branchService.getNearbyBranches(latitude, longitude);
+
+        if (nearbyBranches.isEmpty()) {
+            return ResponseEntity.noContent().build();
+        }
+
+        return ResponseEntity.ok(nearbyBranches);
+    }
 }

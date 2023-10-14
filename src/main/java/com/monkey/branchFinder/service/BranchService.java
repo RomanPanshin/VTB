@@ -63,4 +63,7 @@ public class BranchService {
             return false;
         }
     }
+    public List<Branch> getNearbyBranches(Double latitude, Double longitude) {
+        return branchRepository.findNearbyBranches(latitude, longitude);
+    }
 }
